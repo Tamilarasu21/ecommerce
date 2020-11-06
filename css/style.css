@@ -81,27 +81,14 @@ body
     left:0;
     right:0;
 }
-.header .logo
-{
-    margin:auto;
-    width:300px;
-    font-size:40px;
-    font-weight:bolder;
-}
-.header .logo .one
+/* .header .logo .one
 {
     color:#0597ff;
 }
 .header .logo .two
 {
     color:#ff4405;
-}
-.header .logo img
-{
-    width:33px;
-    height:33px;
-    margin-left:-20px;
-}
+} */
 .container-fluid
 {
     margin-left:-1px;
