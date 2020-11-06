@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tamilarasu Arunachalam">
+    <title>GadgetsKart</title>
+    <link rel="shortcut icon" href="assets/cart.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- header start-->
+    <div class="header">
+        <span class="logo">
+            &nbsp;<span class="one">Gadgets</span><span class="two">Kart</span>
+            <img src="assets/cart.png" alt="">
+        </span>
+    </div>
+    <div id="banner">
+        <img src="assets/accs.png" alt="img" width="100%" style="max-height:250px;" class="img-fluid">
+    </div>
+    <header>
+    <nav class="navbar navbar-inverse" style="margin-left:-1px;margin-right:-1px;background:#b2bcc2;border:none;">
+
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"><img src="assets/cart.png" alt="" width="40" height="40" class="img-circle" style="background:snow;padding:0px;margin-top:-10px"></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="index.html" id="nl">Home</a></li>
+               <li class="nav-item"><a href="category.html" id="nl">Categories</a></li>
+                <li class="nav-item active"><a href="brand.html" id="nl">Brand</a></li>
+                <li class="nav-item"><a href="offer.html" id="nl">Offer</a></li>
+                <li class="nav-item"><a href="cart.html" id="nl">Cart <span class="badge badge-primary" id="badge">3</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav" style="float:right;">
+                    <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#buy">
+                        Buy
+                      </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#sell">
+                        Sell
+                      </a></li>
+                </ul>
+        </div>
+    </nav>
+</header>
+<!-- header ends -->
+    <!-- modal buy start -->
+    <div class="modal fade" id="buy">
+        <div class="modal-dialog">
+          <div class="modal-content col-md-8 col-md-offset-2">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="text-center">
+                <img src="assets/cart.png" alt="" class="img-circle" width="50px" height="50px">
+                <h3 class="text-bold">Buyer Login</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <form class="form-signin" method="post" action="signin.php">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
+                </div>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Sign In</a>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- modal buy ends -->
+    <!-- modal sell start -->
+    <div class="modal fade" id="sell">
+        <div class="modal-dialog">
+          <div class="modal-content col-md-8 col-md-offset-2">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="text-center">
+                <img src="assets/cart.png" alt="" class="img-circle" width="50px" height="50px">
+                <h3 class="text-bold">Seller Login</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <form class="form-signin" method="post" action="signin.php">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus>
+                </div>
+                <div class="form-group">
+                  <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
+                </div>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Sign In</a>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- modal sell ends -->
+<div class="main">
+    <legend><h1 class="text-success text-center"><b>Brands</b></h1></legend>
+    <div class="container">
+        <div class="row" style="padding:5px;">
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=apple"><img class="img-fluid img-resoponsive" src="assets/apple.png" alt="apple" width="200" height="200">
+            <h2 class="text-danger">Apple</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=beats"><img class="img-fluid img-resoponsive" src="assets/beats.png" alt="beats" width="200" height="200">
+            <h2 class="text-danger">Beats</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=boat"><img class="img-fluid img-resoponsive" src="assets/boat.png" alt="boat" width="200" height="200">
+            <h2 class="text-danger">Boat</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=JBL"><img class="img-fluid img-resoponsive" src="assets/JBL.png" alt="JBL" width="200" height="200">
+            <h2 class="text-danger">JBL</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=realme"><img class="img-fluid img-resoponsive" src="assets/realme.png" alt="realme" width="200" height="200">
+            <h2 class="text-danger">Realme</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=redmi"><img class="img-fluid img-resoponsive" src="assets/redmi.png" alt="redmi" width="200" height="200">
+            <h2 class="text-danger">Redmi</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=samsung"><img class="img-fluid img-resoponsive" src="assets/samsung.png" alt="samsung" width="200" height="200">
+            <h2 class="text-danger">Samsung</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=sandisk"><img class="img-fluid img-resoponsive" src="assets/sandisk.png" alt="sandisk" width="200" height="200">
+            <h2 class="text-danger">Sandisk</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=skullcandy"><img class="img-fluid img-resoponsive" src="assets/skullcandy.png" alt="skullcandy" width="200" height="200">
+            <h2 class="text-danger">Skullcandy</h2></a>
+        </div>
+            <div class="col-lg-4 text-center" style="border:1px solid gray;border-radius:4px;">
+        <a href="productBrands.php?brands=sony"><img class="img-fluid img-resoponsive" src="assets/sony.png" alt="sony" width="200" height="200">
+            <h2 class="text-danger">Sony</h2></a>
+        </div>
+            </div>
+    </div>
+</div>
+    <br><br><br><br>
+<!-- Footer pc starts-->
+<footer class="footer" id="footer1" style="background:black;color:snow">
+  <div class="container ">
+    <div class="col-md-4 text-center">
+      <h5 class="text-secondary"><b>Social Media</b></h5>
+      <ul class="list-unstyled">
+        <li><a href="https://facebook.com" class="text-info" target="_blank"><img src="assets/facebook-rounded.png" alt="f" width="18" height="18" class="img-circle" style=""></a></li>
+        <li><a href="https://instagram.com" class="text-danger" target="_blank"><img src="assets/instagram-rounded.png" alt="i" width="18" height="18" class="img-circle" style=""></a></li>
+        <li><a href="https://linkedin.com" class="text-primary" target="_blank"><img src="assets/linkedin-rounded.png" alt="l" width="18" height="18" class="img-circle" style=""></a></li>
+        <li><a href="https://whatsapp.com" class="text-success" target="_blank"><img src="assets/whatsapp-rounded.png" alt="w" width="18" height="18" class="img-circle" style=""></a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 text-center">
+      <h5 class="text-secondary"><b>Important Links</b></h5>
+      <ul class="list-unstyled">
+        <li><a href="#" id="ni">Home</a></li>
+        <li><a href="#" id="ni">About</a></li>
+        <li><a href="#" id="ni">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 text-center" itemscope itemtype="http://schema.org/business">
+      <h5 itemprop="name" class="text-secondary"><b>For Enquiries</b></h5>
+      <ul class="list-unstyled">
+        <li><i class="fa fa-envelope"></i>&emsp;<a href="mailto:yourmail@gmail.com" id="ni" itemprop="email">yourmail@domain.com</a></li>
+        <li><i class="fa fa-phone"></i>&emsp;<a href="tel:+911234567890" id="ni" itemprop="telephone">+91 1234567890</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright text-center">© 2020
+    <a href="#">GadgetsKart</a>
+  </div>
+</footer>
+<!-- Footer pc ends-->    
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

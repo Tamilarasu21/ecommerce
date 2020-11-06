@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tamilarasu Arunachalam" />
+    <title>GadgetsKart</title>
+    <link rel="shortcut icon" href="assets/cart.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- header start--><div class="header">
+      <span class="logo">
+        &nbsp;<span class="one">Gadgets</span><span class="two">Kart</span>
+        <img src="assets/cart.png" alt="" />
+      </span>
+    </div>
+    <div id="banner">
+      <img
+        src="assets/accs.png"
+        alt="img"
+        width="100%"
+        style="max-height: 250px"
+        class="img-fluid"
+      />
+    </div>
+    <header>
+      <nav
+        class="navbar navbar-inverse"
+        style="
+          margin-left: -1px;
+          margin-right: -1px;
+          background: #b2bcc2;
+          border: none;
+        "
+      >
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="assets/cart.png"
+              alt=""
+              width="40"
+              height="40"
+              class="img-circle"
+              style="background: snow; padding: 0px; margin-top: -10px"
+          /></a>
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#menu"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="menu" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a href="index.html" id="nl">Home</a></li>
+            <li class="nav-item">
+              <a href="category.html" id="nl">Categories</a>
+            </li>
+            <li class="nav-item"><a href="brand.html" id="nl">Brand</a></li>
+            <li class="nav-item active">
+              <a href="offer.html" id="nl">Offer</a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html" id="nl"
+                >Cart <span class="badge badge-primary" id="badge">3</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav navbar-nav" style="float:right;">
+            <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#buy">
+                Buy
+              </a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#sell">
+                Sell
+              </a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+     <!-- header ends-->
+    <!-- modal buy start -->
+    <div class="modal fade" id="buy">
+      <div class="modal-dialog">
+        <div class="modal-content col-md-8 col-md-offset-2">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="text-center">
+              <img src="assets/cart.png" alt="" class="img-circle" width="50px" height="50px">
+              <h3 class="text-bold">Buyer Login</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin" method="post" action="signin.php">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus>
+              </div>
+              <div class="form-group">
+                <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">Sign In</a>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- modal buy ends -->
+  <!-- modal sell start -->
+  <div class="modal fade" id="sell">
+      <div class="modal-dialog">
+        <div class="modal-content col-md-8 col-md-offset-2">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="text-center">
+              <img src="assets/cart.png" alt="" class="img-circle" width="50px" height="50px">
+              <h3 class="text-bold">Seller Login</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin" method="post" action="signin.php">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus>
+              </div>
+              <div class="form-group">
+                <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
+              </div>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">Sign In</a>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- modal sell ends -->
+    <legend>
+      <h2 class="text-center text-info"><b>Today's Offer</b></h2>
+    </legend>
+    <div class="feed">
+      <div class="products">
+        <img src="assets/images/sandisksdcard16gb.png" />
+        <h1>SanDisk SD card 16GB</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.400</s
+          ><span><b>&nbsp;&#8377;.299</b></span>
+        </p>
+        <p><b>Category : </b>SD card</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/sandisk16gbcb.png" />
+        <h1>SanDisk Cruzer Blade 16GB</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.450</s
+          ><span><b>&nbsp;&#8377;.349</b></span>
+        </p>
+        <p><b>Category : </b>Pendrive</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/charger1.png" />
+        <h1>Charger for Samsung Galaxy</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.999</s
+          ><span><b>&nbsp;&#8377;.449</b></span>
+        </p>
+        <p><b>Category : </b>Charger</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/mipowerbank.png" />
+        <h1>Mi powerbank 2i 10000mAh</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.899</s
+          ><span><b>&nbsp;&#8377;.700</b></span>
+        </p>
+        <p><b>Category : </b>Powerbank</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/5f0ffeb548eb18.94658975.realmepowebank.png" />
+        <h1>Realme 10000 mAh Power Bank</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.1699</s
+          ><span><b>&nbsp;&#8377;.1299</b></span>
+        </p>
+        <p><b>Category : </b>Powerbank</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/skullcandybtearphone.png" />
+        <h1>Skullcandy earphone</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3500</s
+          ><span><b>&nbsp;&#8377;.1899</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/mi-band_3.png" />
+        <h1>Mi smart band 3 regular</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.2599</s
+          ><span><b>&nbsp;&#8377;.1899</b></span>
+        </p>
+        <p><b>Category : </b>Watch</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/sonybtspeaker.png" />
+        <h1>Sony bluetooth speaker</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3000</s
+          ><span><b>&nbsp;&#8377;.1999</b></span>
+        </p>
+        <p><b>Category : </b>Speaker</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/samsungsdcard128gb.png" />
+        <h1>MicroSDXC PRO+ SD Card</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3599</s
+          ><span><b>&nbsp;&#8377;.1999</b></span>
+        </p>
+        <p><b>Category : </b>SD card</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/earphone.png" />
+        <h1>Sony wired headphone</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.2499</s
+          ><span><b>&nbsp;&#8377;.2000</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/5f101d60ef3db6.91229959.samsunglevel2.png" />
+        <h1>Samsung Level U Headphone</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3000</s
+          ><span><b>&nbsp;&#8377;.2199</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/jblbtearphone.png" />
+        <h1>JBL bluetooth headphone</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3000</s
+          ><span><b>&nbsp;&#8377;.2299</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/boatbtearphone.png" />
+        <h1>Boat earphones wireless</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3000</s
+          ><span><b>&nbsp;&#8377;.2399</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/beats_earphone1.png" />
+        <h1>Beats headphone wireless</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.3000</s
+          ><span><b>&nbsp;&#8377;.2499</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/jblbluetoothspeaker.png" />
+        <h1>JBL bluetooth speaker</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.4500</s
+          ><span><b>&nbsp;&#8377;.3699</b></span>
+        </p>
+        <p><b>Category : </b>Speaker</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/watch.png" />
+        <h1>Apple watch 3 with GPS</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.14999</s
+          ><span><b>&nbsp;&#8377;.10000</b></span>
+        </p>
+        <p><b>Category : </b>Watch</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/apple_airpods.png" />
+        <h1>Apple airpods wireless</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.15000</s
+          ><span><b>&nbsp;&#8377;.13999</b></span>
+        </p>
+        <p><b>Category : </b>Earphone</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/iphonesered.png" />
+        <h1>Iphone SE 2020 64GB</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.45999</s
+          ><span><b>&nbsp;&#8377;.42499</b></span>
+        </p>
+        <p><b>Category : </b>Mobile</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+      <div class="products">
+        <img src="assets/images/iphone.png" />
+        <h1>Iphone 10 - 3GB - 32GB</h1>
+        <p>
+          <strong>Price :</strong><s>&nbsp;&#8377;.54999</s
+          ><span><b>&nbsp;&#8377;.50000</b></span>
+        </p>
+        <p><b>Category : </b>Mobile</p>
+        <button name="add" class="addToCart">
+          <a href="user/login.php">Add to cart</a>
+        </button>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <!-- Footer pc starts-->
+    <footer class="footer" id="footer1" style="background:black;color:snow">
+      <div class="container ">
+        <div class="col-md-4 text-center">
+          <h5 class="text-secondary"><b>Social Media</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://facebook.com" class="text-info" target="_blank"><img src="assets/facebook-rounded.png" alt="f" width="18" height="18" class="img-circle" style=""></a></li>
+            <li><a href="https://instagram.com" class="text-danger" target="_blank"><img src="assets/instagram-rounded.png" alt="i" width="18" height="18" class="img-circle" style=""></a></li>
+            <li><a href="https://linkedin.com" class="text-primary" target="_blank"><img src="assets/linkedin-rounded.png" alt="l" width="18" height="18" class="img-circle" style=""></a></li>
+            <li><a href="https://whatsapp.com" class="text-success" target="_blank"><img src="assets/whatsapp-rounded.png" alt="w" width="18" height="18" class="img-circle" style=""></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h5 class="text-secondary"><b>Important Links</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="#" id="ni">Home</a></li>
+            <li><a href="#" id="ni">About</a></li>
+            <li><a href="#" id="ni">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center" itemscope itemtype="http://schema.org/business">
+          <h5 itemprop="name" class="text-secondary"><b>For Enquiries</b></h5>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-envelope"></i>&emsp;<a href="mailto:yourmail@gmail.com" id="ni" itemprop="email">yourmail@domain.com</a></li>
+            <li><i class="fa fa-phone"></i>&emsp;<a href="tel:+911234567890" id="ni" itemprop="telephone">+91 1234567890</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright text-center">© 2020
+        <a href="#">GadgetsKart</a>
+      </div>
+    </footer>
+    <!-- Footer pc ends-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
