@@ -81,14 +81,13 @@ body
     left:0;
     right:0;
 }
-/* .header .logo .one
+@media (max-width:768px)
 {
-    color:#0597ff;
+    .header img{
+        width:280px;
+        height:45px;
+    }
 }
-.header .logo .two
-{
-    color:#ff4405;
-} */
 .container-fluid
 {
     margin-left:-1px;
