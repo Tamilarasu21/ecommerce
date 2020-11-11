@@ -2,362 +2,540 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tamilarasu Arunachalam">
-    <title>GadgetsKart</title>
-    <link rel="shortcut icon" href="assets/cart.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tamilarasu Arunachalam">
+  <title>GadgetsKart</title>
+  <link rel="shortcut icon" href="assets/cart.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body>
-    <!-- header start -->
-    <div class="header text-center">
-        <img src="assets/gklogo.png" alt="" class="img-fluid" width="330" height="60">
-    </div>
-    <div id="banner">
-        <img src="assets/accs.png" alt="img" width="100%" style="max-height:250px;" class="img-fluid">
-    </div>
-    <header>
-        <nav class="navbar navbar-inverse" style="margin-left:-1px;margin-right:-1px;background:#b2bcc2;border:none;">
+  <!-- header start -->
+  <div class="header text-center">
+    <img src="assets/gklogo.png" alt="" class="img-fluid" width="330" height="60">
+  </div>
+  <div id="banner">
+    <img src="assets/accs.png" alt="img" width="100%" style="max-height:250px;" class="img-fluid">
+  </div>
+  <header>
+    <nav class="navbar navbar-inverse" style="margin-left:-1px;margin-right:-1px;background:#b2bcc2;border:none;">
 
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand"><img src="assets/cart.png" alt="" width="40" height="40"
-                        class="img-circle" style="background:snow;padding:0px;margin-top:-10px"></a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="menu" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="index.html" id="nl">Home</a></li>
-                    <li class="nav-item"><a href="category.html" id="nl">Categories</a></li>
-                    <li class="nav-item"><a href="brand.html" id="nl">Brand</a></li>
-                    <li class="nav-item"><a href="offer.html" id="nl">Offer</a></li>
-                    <li class="nav-item active"><a href="cart.html" id="nl">Cart <span class="badge badge-primary"
-                                id="badge">3</span></a></li>
-                </ul>
-                <ul class="nav navbar-nav" style="float:right;">
-                    <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#buy">
-                        Buy
-                      </a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#sell">
-                        Sell
-                      </a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- header ends-->
-    <!-- modal buy start -->
-    <div class="modal fade" id="buy">
-        <div class="modal-dialog">
-          <div class="modal-content col-md-8 col-md-offset-2">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <div class="text-center">
-                <img src="assets/cart.png" alt="" class="img-circle" width="50px" height="50px">
-                <h3 class="text-bold">Buyer Login</h3>
-              </div>
-            </div>
-            <div class="modal-body">
-              <form class="form-signin" method="post" action="signin.php">
-                <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><img src="assets/black-back-closed-envelope-shape.png" alt="" width="15" height="15"></span>
-                    <input type="email" id="email" class="form-control" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><img src="assets/padlock.png" alt="" width="15" height="15"></span>
-                    <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
-                  </div>
-                </div>
-                <div class="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                  </label>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <div class="text-center">
-                <a href="#" class="btn btn-primary">Sign In</a>
-              </div>
-              </form>
-            </div>
-          </div>
-        </div>
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand"><img src="assets/cart.png" alt="" width="40" height="40" class="img-circle"
+            style="background:snow;padding:0px;margin-top:-10px"></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-    <!-- modal buy ends -->
-    <!-- modal sell start -->
-    <div class="modal fade" id="sell">
-        <div class="modal-dialog">
-          <div class="modal-content col-md-8 col-md-offset-2">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <div class="text-center">
-                <img src="assets/cart.png" alt="" class="img-circle" width="50px" height="50px">
-                <h3 class="text-bold">Seller Login</h3>
-              </div>
-            </div>
-            <div class="modal-body">
-              <form class="form-signin" method="post" action="signin.php">
-                <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><img src="assets/black-back-closed-envelope-shape.png" alt="" width="15" height="15"></span>
-                    <input type="email" id="email" class="form-control" name="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><img src="assets/padlock.png" alt="" width="15" height="15"></span>
-                    <input type="password" id="password" class="form-control" name="password" pattern=".{5,}" placeholder="Password" required>
-                  </div>
-                </div>
-                <div class="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                  </label>
-                </div>
-            </div>
-            <div class="modal-footer">
-              <div class="text-center">
-                <a href="#" class="btn btn-primary">Sign In</a>
-              </div>
-              </form>
-            </div>
-          </div>
-        </div>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="index.html" id="nl">Home</a></li>
+          <li class="nav-item"><a href="category.html" id="nl">Categories</a></li>
+          <li class="nav-item"><a href="brand.html" id="nl">Brand</a></li>
+          <li class="nav-item"><a href="offer.html" id="nl">Offer</a></li>
+          <li class="nav-item active"><a href="cart.html" id="nl">Cart <span class="badge badge-primary"
+                id="badge">3</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav" style="float:right;">
+          <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#buyer">
+              Buy
+            </a></li>
+          <li class="nav-item"><a href="#" class="nav-link" id="nl" data-toggle="modal" data-target="#seller">
+              Sell
+            </a></li>
+        </ul>
       </div>
-    <!-- modal sell ends -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 order-md-1 mb-4">
-                <h4 class="d-flex justify-content-between align-items-center mb-3">
-                    <span class="text-muted">Your cart</span>
-                    <span class="badge badge-secondary badge-pill">3</span>
-                </h4>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Product name</h6>
-                            <small class="text-muted">Brief description</small>
-                        </div>
-                        <span class="text-muted">&#8377;12</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Second product</h6>
-                            <small class="text-muted">Brief description</small>
-                        </div>
-                        <span class="text-muted">&#8377;8</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between lh-condensed">
-                        <div>
-                            <h6 class="my-0">Third item</h6>
-                            <small class="text-muted">Brief description</small>
-                        </div>
-                        <span class="text-muted">&#8377;5</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between bg-light">
-                        <div class="text-success">
-                            <h6 class="my-0">Promo code</h6>
-                            <small>EXAMPLECODE</small>
-                        </div>
-                        <span class="text-success">-&#8377;5</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <span>Total (INR)</span>
-                        <strong>&#8377;20</strong>
-                    </li>
-                </ul>
-
-                <form class="card p-2">
+    </nav>
+  </header>
+  <!-- header ends-->
+  <!-- modal buyer start -->
+  <div class="modal fade" id="buyer" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: whitesmoke">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="text-center"><img src="assets/cart.png" alt="" class="img-circle" width="50" height="50"></div>
+          <h2 class="text-center text-primary" style="font-weight: 600">Buyer</h2>
+        </div>
+        <br />
+        <ul class="nav nav-tabs">
+          <li class="active text-center" style="width: 50%">
+            <a href="#signin" data-toggle="tab">Sign In</a>
+          </li>
+          <li class="text-center" style="width: 50%">
+            <a href="#signup" data-toggle="tab">Sign Up</a>
+          </li>
+        </ul>
+        <div class="modal-body">
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="signin">
+              <form action="#" method="post" class="well form-horizontal">
+                <div class="form-group">
+                  <div class="inputGroupContainer">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Promo code"><br><br>
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-secondary">Redeem</button>
-                        </div>
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9]+@gmail\.com+$"
+                        class="form-control" placeholder="Enter Email" />
                     </div>
-                </form>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Enter Password" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="text-center">
+                    <button name="login" class="btn btn-info btn-block">
+                      Sign In
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col-md-8 order-md-2">
-                <h4 class="mb-3">Billing address</h4>
-                <form class="needs-validation" novalidate>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="lastName">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                        </div>
-                    </div><br>
-
-                    <div class="mb-3">
-                        <label for="username">Username</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">
-                                <span class="input-group-text">@</span>
-                            </div>
-                            <input type="text" class="form-control" id="username" placeholder="Username" required>
-                        </div>
-                    </div><br>
-
-                    <div class="mb-3">
-                        <label for="email">Email</label>
-                        <div class="input-group">
-                          <div class="input-group-addon"><img src="assets/black-back-closed-envelope-shape.png" alt="" width="15" height="15"></div>
-                          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                        </div>
-                    </div><br>
-
-                    <div class="mb-3">
-                        <label for="address">Address</label>
-                        <div class="input-group">
-                          <div class="input-group-addon"><img src="assets/map.png" alt="" width="15" height="15"></div>
-                          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                        </div>
-                    </div><br>
-
-                    <div class="mb-3">
-                        <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                        <div class="input-group">
-                          <div class="input-group-addon"><img src="assets/map.png" alt="" width="15" height="15"></div>
-                          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-md-5 mb-3">
-                            <label for="country">Country</label>
-                            <select class="form-control" id="country" required>
-                                <option value="">Choose...</option>
-                                <option>India</option>
-                                <option>USA</option>
-                                <option>UK</option>
-                                <option>UAE</option>
-                                <option>China</option>
-                                <option>Russia</option>
-                                <option>Australia</option>
-                                <option>South Africa</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                            <label for="state">State</label>
-                            <select class="form-control" id="state" required>
-                                <option value="">Choose...</option>
-                                <option>Tamil Nadu</option>
-                                <option>Telangana</option>
-                                <option>Kerala</option>
-                                <option>Karnataka</option>
-                                <option>Andhra Pradesh</option>
-                                <option>Punjab</option>
-                                <option>West Bengal</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="zip">Zip</label>
-                            <input type="text" class="form-control" id="zip" placeholder="" required>
-                        </div>
+            <div class="tab-pane fade" id="signup">
+              <form action="" method="post" class="well form-horizontal">
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" name="firstname" id="firstname" class="form-control"
+                        placeholder="First name" />
                     </div>
-                    <hr class="mb-4">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="same-address">
-                        <label class="custom-control-label" for="same-address">Shipping address is the same as my
-                            billing address</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Lastname" />
                     </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="save-info">
-                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input type="email" name="email" id="email" class="form-control"
+                        pattern="^[a-zA-Z0-9]+@gmail\.com+$" placeholder="Email" />
                     </div>
-                    <hr class="mb-4">
-
-                    <h4 class="mb-3">Payment</h4>
-
-                    <div class="d-block my-3">
-                        <div class="custom-control custom-radio">
-                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
-                                required>
-                            <label class="custom-control-label" for="credit">Credit card</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="debit">Debit card</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="paypal">PayPal</label>
-                        </div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="cc-name">Name on card</label>
-                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="cc-number">Credit card number</label>
-                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                        </div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-md-3 mb-3">
-                            <label for="cc-expiration">Expiration</label>
-                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="cc-cvv">CVV</label>
-                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                        </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                      <input type="tel" name="mobile" id="mobile" class="form-control"
+                        pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" placeholder="Mobile Number" />
                     </div>
-                    <hr class="mb-4">
-                    <div class="text-right"><button class="btn btn-primary" type="submit">Continue to checkout</button></div>
-                </form>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <label for="male" class="radio-inline">
+                        <input type="radio" name="gender" id="male" value="male" />Male
+                      </label>
+                      <label for="female" class="radio-inline">
+                        <input type="radio" name="gender" id="female" value="female" />Female
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Atleast 6 characters" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="cpassword" id="cpassword" class="form-control"
+                        placeholder="Retype Password" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group text-center">
+                  <button name="register" class="btn btn-info btn-block">
+                    Sign Up
+                  </button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <br><br><br><br>
-    <!-- Footer pc starts-->
-    <footer class="footer" id="footer1" style="background:black;color:snow">
-        <div class="container ">
-          <div class="col-md-4 text-center">
-            <h5 class="text-secondary"><b>Social Media</b></h5>
-            <ul class="list-unstyled">
-              <li><a href="https://facebook.com" class="text-info" target="_blank"><img src="assets/facebook-rounded.png" alt="f" width="18" height="18" class="img-circle" style=""></a></li>
-              <li><a href="https://instagram.com" class="text-danger" target="_blank"><img src="assets/instagram-rounded.png" alt="i" width="18" height="18" class="img-circle" style=""></a></li>
-              <li><a href="https://linkedin.com" class="text-primary" target="_blank"><img src="assets/linkedin-rounded.png" alt="l" width="18" height="18" class="img-circle" style=""></a></li>
-              <li><a href="https://whatsapp.com" class="text-success" target="_blank"><img src="assets/whatsapp-rounded.png" alt="w" width="18" height="18" class="img-circle" style=""></a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center">
-            <h5 class="text-secondary"><b>Important Links</b></h5>
-            <ul class="list-unstyled">
-              <li><a href="#" id="ni">Home</a></li>
-              <li><a href="#" id="ni">About</a></li>
-              <li><a href="#" id="ni">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center" itemscope itemtype="http://schema.org/business">
-            <h5 itemprop="name" class="text-secondary"><b>For Enquiries</b></h5>
-            <ul class="list-unstyled">
-              <li><i class="fa fa-envelope"></i>&emsp;<a href="mailto:yourmail@gmail.com" id="ni" itemprop="email">yourmail@domain.com</a></li>
-              <li><i class="fa fa-phone"></i>&emsp;<a href="tel:+911234567890" id="ni" itemprop="telephone">+91 1234567890</a></li>
-            </ul>
+  </div>
+  <!-- modal buyer ends -->
+  <!-- modal seller start -->
+  <div class="modal fade" id="seller" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background: whitesmoke">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <div class="text-center"><img src="assets/cart.png" alt="" class="img-circle" width="50" height="50"></div>
+          <h2 class="text-center text-primary" style="font-weight: 600">Seller</h2>
+        </div>
+        <br />
+        <ul class="nav nav-tabs">
+          <li class="active text-center" style="width: 50%">
+            <a href="#ssignin" data-toggle="tab">Sign In</a>
+          </li>
+          <li class="text-center" style="width: 50%">
+            <a href="#ssignup" data-toggle="tab">Sign Up</a>
+          </li>
+        </ul>
+        <div class="modal-body">
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="ssignin">
+              <form action="#" method="post" class="well form-horizontal">
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input type="email" name="email" id="email" class="form-control"
+                        pattern="^[a-zA-Z0-9]+@gmail\.com+$" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button name="login" class="btn btn-success btn-block">Sign up</button>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="ssignup">
+              <form action="seller/register.php" method="post" class="well form-horizontal">
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" name="firmname" id="firmname" class="form-control" placeholder="Firm name">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" name="owner" id="owner" class="form-control" placeholder="Owner name">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input type="email" name="email" id="email" class="form-control"
+                        pattern="^[a-zA-Z0-9]+@gmail\.com+$" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                      <input type="tel" name="mobile" id="mobile" class="form-control"
+                        pattern="[6-9]{1}[0-9]{2}[0-9]{3}[0-9]{4}" placeholder="Mobile Number">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <label for="male" class="radio-inline"><input type="radio" name="gender" id="male"
+                          value="male">Male</label>
+                      <label for="female" class="radio-inline"><input type="radio" name="gender" id="female"
+                          value="female">Female</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="password" id="password" class="form-control"
+                        placeholder="Atleast 6 characters" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="cpassword" id="cpassword" class="form-control"
+                        placeholder="Retype Password" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button name="register" class="btn btn-success btn-block">Sign Up</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="footer-copyright text-center">© 2020
-          <a href="#">GadgetsKart</a>
-        </div>
-      </footer>
-      <!-- Footer pc ends-->
-    <script src="js/jquery.min.js"></script>
-    </script><script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+      </div>
+    </div>
+  </div>
+  <!-- modal seller ends -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 order-md-1 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">SanDisk Cruzer Blade 16GB</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">&#8377;349</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Mi powerbank 2i 10000mAh</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">&#8377;700</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Skullcandy earphone</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">&#8377;1899</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">-&#8377;200</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (INR)</span>
+            <strong>&#8377;2748</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code"><br><br>
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 order-md-2">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            </div>
+          </div><br>
+
+          <div class="mb-3">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <div class="input-group-addon">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+            </div>
+          </div><br>
+
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <div class="input-group">
+              <div class="input-group-addon"><img src="assets/black-back-closed-envelope-shape.png" alt="" width="15"
+                  height="15"></div>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+          </div><br>
+
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <div class="input-group">
+              <div class="input-group-addon"><img src="assets/map.png" alt="" width="15" height="15"></div>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            </div>
+          </div><br>
+
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <div class="input-group">
+              <div class="input-group-addon"><img src="assets/map.png" alt="" width="15" height="15"></div>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="form-control" id="country" required>
+                <option value="">Choose...</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>UAE</option>
+                <option>China</option>
+                <option>Russia</option>
+                <option>Australia</option>
+                <option>South Africa</option>
+              </select>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="form-control" id="state" required>
+                <option value="">Choose...</option>
+                <option>Tamil Nadu</option>
+                <option>Telangana</option>
+                <option>Kerala</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Punjab</option>
+                <option>West Bengal</option>
+              </select>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my
+              billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">PayPal</label>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            </div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="text-right"><button class="btn btn-primary" type="submit">Continue to checkout</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <!-- Footer pc starts-->
+  <footer class="footer" id="footer1" style="background:black;color:snow">
+    <div class="container ">
+      <div class="col-md-4 text-center">
+        <h5 class="text-secondary"><b>Social Media</b></h5>
+        <ul class="list-unstyled">
+          <li><a href="https://facebook.com" class="text-info" target="_blank"><img src="assets/facebook-rounded.png"
+                alt="f" width="18" height="18" class="img-circle" style=""></a></li>
+          <li><a href="https://instagram.com" class="text-danger" target="_blank"><img
+                src="assets/instagram-rounded.png" alt="i" width="18" height="18" class="img-circle" style=""></a></li>
+          <li><a href="https://linkedin.com" class="text-primary" target="_blank"><img src="assets/linkedin-rounded.png"
+                alt="l" width="18" height="18" class="img-circle" style=""></a></li>
+          <li><a href="https://whatsapp.com" class="text-success" target="_blank"><img src="assets/whatsapp-rounded.png"
+                alt="w" width="18" height="18" class="img-circle" style=""></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center">
+        <h5 class="text-secondary"><b>Important Links</b></h5>
+        <ul class="list-unstyled">
+          <li><a href="#" id="ni">Home</a></li>
+          <li><a href="#" id="ni">About</a></li>
+          <li><a href="#" id="ni">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 text-center" itemscope itemtype="http://schema.org/business">
+        <h5 itemprop="name" class="text-secondary"><b>For Enquiries</b></h5>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-envelope"></i>&emsp;<a href="mailto:yourmail@gmail.com" id="ni"
+              itemprop="email">yourmail@domain.com</a></li>
+          <li><i class="fa fa-phone"></i>&emsp;<a href="tel:+911234567890" id="ni" itemprop="telephone">+91
+              1234567890</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright text-center">© 2020
+      <a href="#">GadgetsKart</a>
+    </div>
+  </footer>
+  <!-- Footer pc ends-->
+  <script src="js/jquery.min.js"></script>
+  </script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
